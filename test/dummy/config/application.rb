@@ -1,6 +1,7 @@
 require_relative 'boot'
 
-require 'rails/all'
+require 'rails'
+require "action_controller/railtie"
 
 Bundler.require(*Rails.groups)
 require "zalenium/chaos"
