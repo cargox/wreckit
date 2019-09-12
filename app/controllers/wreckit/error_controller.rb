@@ -1,6 +1,8 @@
-require_dependency "zalenium/chaos/application_controller"
+# frozen_string_literal: true
 
-module Zalenium::Chaos
+require_dependency "wreckit/application_controller"
+
+module Wreckit
   class ErrorController < ApplicationController
     def index
       raise "Forced error"

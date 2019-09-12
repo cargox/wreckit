@@ -1,4 +1,4 @@
-# Zalenium::Chaos
+# Wreckit
 This is a rails engine that introduces instrumented way to generate remote controlled errors on your application.
 
 ## Installation
@@ -6,7 +6,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 # Gemfile
-gem 'zalenium-chaos'
+gem 'wreckit'
 ```
 
 And then execute:
@@ -19,14 +19,14 @@ On your rails app:
 ```
 # config/routes.rb
  ...
-   mount Zalenium::Chaos::Engine => "/_zalenium"
+   mount Wreckit::Engine => "/_wreckit"
  ...
 ```
 
-Configure the environment variable token the will constrain the requests to Zalenium::Chaos routes and restart your server.
+Configure the environment variable token the will constrain the requests to Wreckit routes and restart your server.
 
 ```
-  export ZALENIUM_CHAOS_KEY="my-secret-key"
+  export WRECKIT_API_KEY="my-secret-key"
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ Configure the environment variable token the will constrain the requests to Zale
 Request and error 500 on your application
 
 ```
-  curl http://myapp.com/_zalenium/error/500 -H "X-Zalenium-Key: my-secret-key"
+  curl http://myapp.com/_wreckit/error/500 -H "X-Wreckit-Key: my-secret-key"
 ```
 
 ## Contributing

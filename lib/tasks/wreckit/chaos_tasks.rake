@@ -1,4 +1,6 @@
+# frozen_string_literal: true
+
 # desc "Explaining what the task does"
-# task :zalenium_chaos do
+# task :wreckit do
 #   # Task goes here
 # end

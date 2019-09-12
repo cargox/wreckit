@@ -1,10 +1,12 @@
-require_relative 'boot'
+# frozen_string_literal: true
 
-require 'rails'
+require_relative "boot"
+
+require "rails"
 require "action_controller/railtie"
 
 Bundler.require(*Rails.groups)
-require "zalenium/chaos"
+require "wreckit"
 
 module Dummy
   class Application < Rails::Application
@@ -17,4 +19,3 @@ module Dummy
     # the framework and any gems in your application.
   end
 end
-
