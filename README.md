@@ -23,7 +23,7 @@ On your rails app:
  ...
 ```
 
-Configure the environment variable token the will constrain the requests to Wreckit routes and restart your server.
+Configure the environment variable token that will constrain the requests to Wreckit routes and restart your server.
 
 ```
   export WRECKIT_API_KEY="my-secret-key"
