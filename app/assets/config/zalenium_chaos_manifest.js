@@ -1,2 +1,2 @@
-//= link_directory ../javascripts/zalenium/chaos .js
-//= link_directory ../stylesheets/zalenium/chaos .css
+//= link_directory ../javascripts/wreckit .js
+//= link_directory ../stylesheets/wreckit .css

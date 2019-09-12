@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zalenium-chaos (0.1.0)
+    wreckit (0.1.0)
       rails (>= 5.2.3, < 6.1.0)
 
 GEM
@@ -135,7 +135,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  zalenium-chaos!
+  wreckit!
 
 BUNDLED WITH
    1.17.3

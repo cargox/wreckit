@@ -1,0 +1,47 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  TargetRubyVersion: 2.6
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+  IgnoredPatterns: ['(\A|\s)#']
+
+Metrics/ModuleLength:
+  Exclude:
+    - "**/*_spec.rb"
+
+Metrics/BlockLength:
+  Exclude:
+    - "**/*_spec.rb"
+    - "./config/routes.rb"
+
+Naming/RescuedExceptionsVariableName:
+  PreferredName: exception
+
+Naming/FileName:
+  Exclude:
+    - "**/rswag-*.rb"
+
+Style/MixinUsage:
+  Exclude:
+    - "test/**/*"
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - "test/*"

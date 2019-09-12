@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  mount Zalenium::Chaos::Engine => "/_zalenium"
+  mount Wreckit::Engine => "/_wreckit"
 end
